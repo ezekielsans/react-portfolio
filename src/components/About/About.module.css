@@ -1,0 +1,53 @@
+@import "../../global.css";
+.section{
+
+    background-color: var(--main-bg-color);
+
+}
+
+
+.container {
+    display: flex;
+    flex: column;
+    gap: 25rem;
+    padding:5rem;
+    margin:2rem;
+   
+}
+
+
+
+
+.title{
+font-size: 2rem;
+font-weight: 600;
+color: var(--font-main-color);
+}
+
+
+.paragraphs{
+    margin-top: 1rem;
+}
+
+.paragraphs p{
+font-size: 1.5rem;
+color: var(--font-tertiary-color);
+text-overflow: ellipsis;
+max-width: 800px;
+}
+
+.term{
+
+    margin: 0.25rem;
+}
+
+.col{
+
+    align-items: start;
+}
+
+.col img{
+
+    max-width: 300px;
+    max-height: 300px;
+}
