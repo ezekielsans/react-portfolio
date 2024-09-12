@@ -9,7 +9,6 @@ export const Services = () => {
     <h1 className={styles.servicesTitle}>Services</h1>
 <div className={styles.services}>
 <div className={styles.servicesCard}>
-
     <h1 className={styles.serviceTitle}><img height="25px" src={getImageUrl("sun.png")} alt="sun" /> Web Development</h1>
     <h3 className={styles.serviceDescription}>Building responsive and scalable websites using the latest technologies. I specialize in creating dynamic web applications with a seamless user experience, covering both front-end and back-end development.</h3>
 </div>

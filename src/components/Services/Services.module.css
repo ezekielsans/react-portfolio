@@ -1,46 +1,96 @@
 @import "../../global.css";
 
-.container{
+.container {
 
-    display: flex;
-    flex-direction: column;
-    background-color: var(--main-bg-color);
-
-    margin: 0 2rem;
-    padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-bg-color);
+  height: 100dvh;
+  margin: 0 2rem;
+  padding: 5rem;
 }
 
 
-.servicesTitle{
-    color:   var(--font-main-color);
-    font-size: 2rem;
-     margin-bottom: 1rem;
+.servicesTitle {
+  color: var(--font-main-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+
 }
 
-.services{
-    display: flex;
-    flex-direction: row;
- gap: 3rem;
- margin-bottom: 1rem;
+.services {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  margin-bottom: 1rem;
 
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
-.serviceTitle{
+.serviceTitle {
 
-  color:   var(--font-main-color);
-font-size: 2rem;
+  color: var(--font-main-color);
+  font-size: 2rem;
 }
-.serviceDescription{
-  color:   var(--font-tertiary-color);
-    font-weight:400;
+
+.serviceDescription {
+  color: var(--font-tertiary-color);
+  font-weight: 400;
   font-size: 1.25rem;
 }
 
 
-.servicesCard{
+.servicesCard {
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+@media screen and (max-width: 830px) {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg-color);
+    margin: 0 2rem;
+    padding: 5rem;
+    margin-bottom: 15rem;
+  }
+
+
+  .servicesTitle {
+    color: var(--font-main-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 1rem;
+
+    justify-content: space-between;
+  }
+
+  .serviceTitle {
+    color: var(--font-main-color);
+    font-size: 1.25rem;
+  }
+
+  .serviceDescription {
+    color: var(--font-tertiary-color);
+    font-weight: 400;
+    font-size: 1.25rem;
+  }
+
+
+  .servicesCard {
     gap: 1rem;
-  
+
 
     display: flex;
     flex-direction: column;
@@ -48,4 +98,8 @@ font-size: 2rem;
 
 
     gap: 2rem;
+  }
+
+
+
 }

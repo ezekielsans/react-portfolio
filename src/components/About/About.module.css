@@ -1,53 +1,112 @@
 @import "../../global.css";
 .section{
-
     background-color: var(--main-bg-color);
-
-}
-
-
-.container {
+    padding: 60px 20px; /* Adjusts padding around the section */
+    color: #e0e0e0; /* Text color */
+  }
+  
+  .container {
     display: flex;
-    flex: column;
-    gap: 25rem;
-    padding:5rem;
-    margin:0 2rem;
-   
-}
+    flex-wrap: wrap; /* Ensures layout is responsive */
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Adds space between columns */
+    max-width: 1200px;
+    margin: 0 auto; /* Centers container on the page */
+  }
+  
+  .colText {
+    flex: 1; /* Allows text column to take up remaining space */
+    min-width: 300px;
+    max-width: 600px;
+  }
+  
+  .colImage {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profileImage {
+    max-width: 100%; /* Ensures image scales correctly */
+    height: 300px;
+     /* Optional: Makes the image circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    color: var(--font-main-color);
+    font-size: 2rem; /* Title size */
+    margin-bottom: 20px;
+  }
+  
+  .paragraphs {
+    color: var(--font-tertiary-color);
+    line-height: 1.6;
+    font-size: 1.25rem; /* Adjusts paragraph font size */
+  }
+  
+  .term {
+    font-weight: bold;
+    color: #6b5bff; /* Highlighted text color */
+  }
+  
+
+@media screen and (max-width: 912px) {
+
+    .container {
+        display: flex;
+        flex: row;
+        gap: 1;
+        padding:1rem;
+        justify-content: space-between;
+        border:1px red solid;
+       
+    }
+    
 
 
 
 
-.title{
-font-size: 2rem;
-font-weight: 600;
-color: var(--font-main-color);
-}
+    .title{
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--font-main-color);
+        border:1px green solid;
+        }
+        
+        
+        .paragraphs{
+            margin-top: 1rem;
+            border:1px green solid;
+        }
+        
+        .paragraphs p{
+        font-size: 1rem;
+        color: var(--font-tertiary-color);
+        text-overflow: ellipsis;
+        max-width: 1000px;
+        border:1px green solid;
+        }
+        
+        .term{
+        
+            margin: 0.25rem;
+            border:1px green solid;
+        }
+        
+        .col{
+            border:1px green solid;
+            align-items: start;
+        }
+        
+        .col img{
+            border:1px blue solid;
+            max-width: 150px;
+            max-height: 150px;
+        }
 
 
-.paragraphs{
-    margin-top: 1rem;
-}
 
-.paragraphs p{
-font-size: 1.5rem;
-color: var(--font-tertiary-color);
-text-overflow: ellipsis;
-max-width: 800px;
-}
-
-.term{
-
-    margin: 0.25rem;
-}
-
-.col{
-
-    align-items: start;
-}
-
-.col img{
-
-    max-width: 300px;
-    max-height: 300px;
 }

@@ -1,106 +1,150 @@
 @import "../../global.css";
 
 
-.container{
+.container {
 
     height: 100vh;
-   
+
 
 }
-.heroContainer{
+
+.heroContainer {
     padding: 10rem;
-   
-display: flex;
-flex-direction: column;
-align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
-.row{
-  
-    color: var(--font-main-color);   
+.row {
+
+    color: var(--font-main-color);
     text-align: center;
 }
 
 
-.greeting{
+.greeting {
 
-font-size: 2rem;
+    font-size: 2rem;
 }
 
-.type{
+.type {
     margin-top: 1rem;
-font-size: 8.5rem;
-font-weight: 400;
-color: var(--font-tertiary-color);
+    font-size: 8.5rem;
+    font-weight: 400;
+    color: var(--font-tertiary-color);
 
 }
 
 
 
 
-.techStackRow{
+.techStackRow {
     margin-top: 10rem;
-display: flex;
-flex-direction: column;
-align-items: center;
-color: var(--font-main-color);   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--font-main-color);
 
-border: 1px blueviolet solid;
+    border: 1px blueviolet solid;
 
 }
 
 
-.techStack{
-    
-border: 1px blueviolet solid;
-   margin: 2rem;
+.techStack {
+
+    border: 1px blueviolet solid;
+    margin: 2rem;
     font-size: 2rem;
 }
 
 
 
-.techContainer{
+.techContainer {
     display: flex;
-    
-border: 1px blueviolet solid;
+
+    border: 1px blueviolet solid;
 }
 
 
-.techMenu{
-display: flex;
-gap: 5rem;
-list-style: none;
-flex-direction: row;
-justify-content: center;
+.techMenu {
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
 
-border: 1px blueviolet solid;
+    border: 1px blueviolet solid;
 }
 
-.techMenu li{
+.techMenu li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-border: 1px blueviolet solid;
-;
+
+    border: 1px blueviolet solid;
+    ;
 
 }
 
-.techMenu img{
+.techMenu img {
 
     border: 1px blueviolet solid;
 
-max-width:55px;
+    max-width: 55px;
 
 
 }
 
-.techMenu h3{
+.techMenu h3 {
     margin-top: 1rem;
-font-size: 1rem;
-font-weight: 400;
-border: 1px blueviolet solid;
+    font-size: 1rem;
+    font-weight: 400;
+    border: 1px blueviolet solid;
+
+
+
+}
+
+@media screen and (max-width: 830px) {
+
+    .container {
+
+        height: 100vh;
+
+
+    }
+
+    .heroContainer {
+        padding: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .row {
+        color: var(--font-main-color);
+        text-align: center;
+    }
+
+
+    .greeting {
+
+        font-size: 2rem;
+    }
+
+    .type {
+        margin-top: 1rem;
+        font-size: 4.5rem;
+        font-weight: 400;
+        color: var(--font-tertiary-color);
+
+        margin-bottom: 2rem;
+
+    }
+
 
 
 
