@@ -1,13 +1,8 @@
 import React from 'react'
 
-
-import { IconContext } from 'react-icons/lib';
-import {
-  SiGithub,
-  SiLinkedin ,
-SiFacebook
-  } from 'react-icons/si';
-
+import { FaFacebookF,
+         FaGithub,
+         FaLinkedin } from "react-icons/fa";
 
 import styles from "./Footer.module.css"
 export const Footer = () => {
@@ -23,18 +18,18 @@ export const Footer = () => {
      </h1>
 
      <div className={styles.socials}>
-     <IconContext.Provider value={{color:"blue"}}>
-      <a href="">
-       {SiGithub}</a>
-       <a href="">
-        {SiFacebook}
-        </a>
-        <a href=""> hello
-       {SiLinkedin}
+        <a href=""> 
+        <FaFacebookF className={styles.icons} />
        </a>
-       </IconContext.Provider>
+       <a href=""> 
+       <FaGithub className={styles.icons}/>
+       </a> <a href=""> 
+       <FaLinkedin className={styles.icons}/>
+       </a>
+    
      </div>
      </div>
       </footer>
+      
   )
 }

@@ -13,6 +13,7 @@ justify-content: space-between;
 padding: 1rem;
 margin: 0 2rem;
 ;
+align-items: center;
 }
 
 .footerContainer h1{
@@ -22,8 +23,18 @@ color: var(--font-main-color);
     font-weight: 600;
 }
 
-.socials a{
-background-color: aqua;
+.socials {
+
     display: flex;
-    gap: 2rem;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+
+.icons{
+
+color: var(--font-main-color);
+height: 100%;
+
+
 }

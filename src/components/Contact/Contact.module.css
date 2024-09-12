@@ -4,11 +4,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
+    padding: 5rem;
+    margin: 0 2rem;
     background-color: var(--main-bg-color); /* Background color for the section */
     color: var(--font-main-color); /* Text color */
     gap: 20px;
-    height: 100vh;
+
   }
   .wordConnect{
 
