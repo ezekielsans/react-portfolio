@@ -1,0 +1,40 @@
+@import "../../global.css";
+
+
+
+
+.container {
+   
+    color: var(--color-text);
+  background-color: var(--main-bg-color);
+  height: 100vh;
+ 
+
+  }
+  
+
+  .projectsContainer{
+    padding: 2rem;
+  border: 1px blue solid;
+
+
+  }
+  .title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--font-main-color);
+    padding: 2rem;
+    border: 1px blue solid;
+  }
+  
+  .projects {
+    border: 1px blue solid;
+  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+  }

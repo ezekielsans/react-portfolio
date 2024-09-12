@@ -12,10 +12,18 @@ export  const About = () => {
 <div className={styles.title}>About Me</div>
 <div className={styles.paragraphs}>
       <p>Kumusta? I'm Ezekiel Santos. I'm a Filipino web developer based in the Philippines.
+         <br /> 
+         <br />
          I love to explore where my curiosity leads me.
-      Or most of my time is spent configuring/debugging. I'm not Italian, but there are times when I produce <span className={styles.term}>spaghetti code</span> 
+      Or most of my time is spent configuring/debugging.
+      <br />
+      <br /> I'm not Italian, but there are times when I produce <span className={styles.term}>spaghetti code</span> 
+       <br />
+       <br />
         I’m an avid motoring enthusiast and try to spend time driving in various cities. Tanay, Rizal is a favorite.
-      One of my past-time hobbies is drawing random things around me. Also, I take videos of places I've been to.</p>
+     <br />
+     <br /> 
+     One of my past-time hobbies is drawing random things around me. Also, I take videos of places I've been to.</p>
       </div>
       </div>
       <div className={styles.col}>

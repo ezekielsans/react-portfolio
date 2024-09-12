@@ -1,0 +1,65 @@
+@import "../../global.css";
+
+.contactSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: var(--main-bg-color); /* Background color for the section */
+    color: var(--font-main-color); /* Text color */
+    gap: 20px;
+    height: 100vh;
+  }
+  .wordConnect{
+
+color: var(--font-tertiary-color);
+font-size: 4rem;
+
+  }
+  .contactText {
+    flex: 1;
+    margin-right: 20px;
+    font-size: 2rem;
+  }
+  
+  .contactForm{
+    flex: 1;
+    max-width: 500px; /* Restricts form width */
+    background-color: #2a2a2a; /* Background for form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contactForm label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #b3b3ff; /* Label color */
+  }
+  
+  .contactForm input,
+  .contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff; /* Input text color */
+  }
+  
+  .contactForm button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6b5bff; /* Button background color */
+    border: none;
+    border-radius: 4px;
+    color: #fff; /* Button text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contactForm button:hover {
+    background-color: #5846cc; /* Button hover color */
+  }

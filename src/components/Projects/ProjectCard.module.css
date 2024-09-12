@@ -1,0 +1,66 @@
+@import "../../global.css";
+.container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    /* background: linear-gradient(180deg, var(--main-bg-color) 0%, var(--font-main-color) 100%); */
+    background: var(--card-bg);
+    /* box-shadow: 0 2px 3px 0 var(--secondary-bg-color); */
+    padding: 2rem 2rem;
+    max-width: 350px;
+
+   
+  }
+  
+  .image {
+    margin-bottom: 26px;
+  }
+  
+  .title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--font-main-color);
+  }
+  
+  .description {
+    color: var(--font-tertiary-color);
+    margin-top: 6px;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  .skills {
+    width: 100%;
+    margin-top: 14px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+    list-style: none;
+  }
+  
+  .skill {
+    font-size: 1.25rem;
+    font-weight: 400;
+    border-radius: 100px;
+   
+    background: var(--font-tertiary-color);
+    padding: 2px 22px;
+  }
+  
+  .links {
+    width: 100%;
+    margin-top: 26px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: var(--font-main-color);
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: 100px;
+    background: var(--font-tertiary-color);
+    padding: 1px 22px;
+  }

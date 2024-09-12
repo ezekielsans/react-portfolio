@@ -1,0 +1,29 @@
+@import "../../global.css";
+
+
+.container{
+background-color: var(--card-bg);
+
+
+}
+.footerContainer{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 1rem;
+margin: 0 2rem;
+;
+}
+
+.footerContainer h1{
+
+color: var(--font-main-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.socials a{
+background-color: aqua;
+    display: flex;
+    gap: 2rem;
+}

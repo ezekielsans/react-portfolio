@@ -14,7 +14,7 @@ const [menuOpen,setMenuOpen] = useState(false);
   return (
     <nav className={styles.container}>
         <div className={styles.navbar}>
-        <a href="" className={styles.title}><img src={getImageUrl("sun.png")} height="70px" alt="" srcset="" /></a>
+        <a href="" className={styles.title}><img src={getImageUrl("sun.png")} height="70px" alt="" /></a>
         <div>
             <div className={styles.menu}>
                 <img className={styles.menuBtn} 

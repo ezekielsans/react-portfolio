@@ -1,20 +1,30 @@
 @import "../../global.css";
 
 
-
 .container{
+
+    height: 100vh;
+   
+
+}
+.heroContainer{
+    padding: 10rem;
+    border: 1px red solid;
 display: flex;
 flex-direction: column;
 align-items: center;
-margin: 8rem;
+
 }
 
 .row{
+    border: 1px  green solid;
     color: var(--font-main-color);   
+    text-align: center;
 }
 
 
 .greeting{
+    border: 1px yellow solid;
 font-size: 2rem;
 }
 
@@ -22,20 +32,38 @@ font-size: 2rem;
 font-size: 8rem;
 font-weight: 400;
 color: var(--font-tertiary-color);
+
+border: 1px pink solid;
+}
+
+
+
+
+.techStackRow{
+    margin-top: 10rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+color: var(--font-main-color);   
+
+border: 1px blueviolet solid;
+
 }
 
 
 .techStack{
-    margin: 3rem;
+    
+border: 1px blueviolet solid;
+   margin: 2rem;
     font-size: 2rem;
 }
 
 
 
 .techContainer{
-
-
     display: flex;
+    
+border: 1px blueviolet solid;
 }
 
 
@@ -45,18 +73,23 @@ gap: 5rem;
 list-style: none;
 flex-direction: row;
 justify-content: center;
+
+border: 1px blueviolet solid;
 }
 
 .techMenu li{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
+border: 1px blueviolet solid;
 ;
 
 }
 
 .techMenu img{
 
+    border: 1px blueviolet solid;
 
 max-width:55px;
 
@@ -67,4 +100,8 @@ max-width:55px;
     margin-top: 1rem;
 font-size: 1rem;
 font-weight: 400;
+border: 1px blueviolet solid;
+
+
+
 }
