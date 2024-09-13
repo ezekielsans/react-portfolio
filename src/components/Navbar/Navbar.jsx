@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 
-
+import { FaToggleOn,FaToggleOff  } from "react-icons/fa";
 
 
 import styles from "./Navbar.module.css"
@@ -11,6 +11,7 @@ import {getImageUrl} from "../../utils"
 
 export const Navbar = () => {
 const [menuOpen,setMenuOpen] = useState(false);
+const [toggleOn,setToggle] = useState(false);
   return (
     <nav className={styles.container}>
         <div className={styles.navbar}>
@@ -29,7 +30,7 @@ const [menuOpen,setMenuOpen] = useState(false);
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#contact"><FaToggleOn/></a></li>
         </ul>
         </div>    
         </div>    
