@@ -110,3 +110,35 @@
 
 
 }
+
+
+/* Additional responsive adjustments specifically for 412px or smaller screens */
+@media screen and (max-width: 412px) {
+  .container {
+    padding: 15px;
+    flex-direction: column-reverse;
+  }
+
+  .title h3 {
+    font-size: 1.2rem; /* Further reduce font size */
+
+    text-align: center;
+  }
+
+  .paragraphs p {
+    font-size: 0.9rem; /* Reduce font size for readability */
+    line-height: 1.4; /* Adjust line height for smaller screens */
+  }
+
+
+  .colImage img{
+
+
+    height: 200px;
+    width: 200px;
+  }
+  .profileImage  {
+    width: 80%; /* Scale down image to fit smaller screens */
+    margin: 10px auto; /* Center the image and add spacing */
+  }
+}

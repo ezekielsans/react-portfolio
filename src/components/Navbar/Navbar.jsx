@@ -1,6 +1,6 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 
-import { FaToggleOn,FaToggleOff  } from "react-icons/fa";
+import { MdLightMode,MdNightlight } from "react-icons/md";
 
 
 import styles from "./Navbar.module.css"
@@ -12,6 +12,11 @@ import {getImageUrl} from "../../utils"
 export const Navbar = () => {
 const [menuOpen,setMenuOpen] = useState(false);
 const [toggleOn,setToggle] = useState(false);
+
+
+useEffect(() => {
+  document.body.className = toggleOn ? 'light-mode' : 'dark-mode';
+},[toggleOn]);
   return (
     <nav className={styles.container}>
         <div className={styles.navbar}>
@@ -30,8 +35,13 @@ const [toggleOn,setToggle] = useState(false);
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact"><FaToggleOn/></a></li>
+            <li><a href="#contact">Contact Me</a></li>
+           
         </ul>
+        <div className={styles.toggleBtn} onClick={()=>setToggle(!toggleOn)}>
+          {toggleOn? <MdNightlight/> : < MdLightMode/>}
+        
+        </div>
         </div>    
         </div>    
         

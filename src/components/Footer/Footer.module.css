@@ -38,3 +38,51 @@ height: 100%;
 
 
 }
+
+
+
+
+
+/* Additional responsive adjustments specifically for 412px or smaller screens */
+@media screen and (max-width: 412px) {
+   
+.container{
+    background-color: var(--card-bg);
+    
+    
+    }
+    .footerContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 0 2rem;
+    ;
+    align-items: center;
+    }
+    
+    .footerContainer h1{
+    
+    color: var(--font-main-color);
+        font-size: 0.5rem;
+        font-weight: 400;
+    }
+    
+    .socials {
+    
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    
+    
+    .icons{
+    
+    color: var(--font-main-color);
+    height: 100%;
+    
+    
+    }
+    
+
+  }

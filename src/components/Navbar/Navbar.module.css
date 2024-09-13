@@ -1,5 +1,19 @@
 @import "../../global.css";
 
+
+/* Light Mode Styles */
+.light-mode {
+  --main-bg-color: #ffffff;
+  --font-main-color: #000000;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  --main-bg-color: #333333;
+  --font-main-color: #red;
+}
+
+
 .container{
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(8.8px);
@@ -20,7 +34,7 @@
   padding-top: 1rem;
   z-index: 2;
   margin: 0 10%;
-  border: 1px red solid;
+
 }
 
 .title {
@@ -37,7 +51,27 @@
 
 .menu {
   display: flex;
+  align-items: center;
 }
+
+.toggleBtn {
+  color: var(--font-main-color);
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+  cursor: pointer;
+  display: inline-flex; /* Makes it possible to center content */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  width: 40px; /* Set width for the circle effect */
+  height: 40px; /* Set height for the circle effect */
+  transition: background-color 0.3s ease, border-radius 0.3s ease; /* Smooth transition */
+}
+
+.toggleBtn:hover {
+  border-radius: 50%; /* Makes the element a circle on hover */
+  background-color: var(--font-tertiary-color);
+}
+
 
 .menuItems {
   gap: 1.5rem;

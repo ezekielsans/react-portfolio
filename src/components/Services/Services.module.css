@@ -1,105 +1,203 @@
 @import "../../global.css";
-
+/* Container for the entire section */
 .container {
-
-  display: flex;
-  flex-direction: column;
+  padding: 50px 20px;
   background-color: var(--main-bg-color);
-  height: 100dvh;
-  margin: 0 2rem;
-  padding: 5rem;
-}
-
-
-.servicesTitle {
-  color: var(--font-main-color);
-  font-size: 2rem;
-  margin-bottom: 1rem;
-
-}
-
-.services {
   text-align: center;
-  display: flex;
-  flex-direction: row;
-  gap: 3rem;
-  margin-bottom: 1rem;
-
-  justify-content: space-between;
 }
 
-.serviceTitle {
-
+/* Title styling for the services section */
+.servicesTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 40px;
   color: var(--font-main-color);
-  font-size: 2rem;
 }
 
-.serviceDescription {
-  color: var(--font-tertiary-color);
-  font-weight: 400;
-  font-size: 1.25rem;
-}
-
-
-.servicesCard {
-
+/* Container for all service cards */
+.services {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+
+  max-width: 1200px;
+  margin: 0 auto; /* Centers the container */
+  cursor: pointer;
 }
 
+/* Each service card styling */
+.servicesCard {
+  background-color: var(--card-bg);
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  width: calc(33% - 40px); /* Adjust width for 3 cards in a row */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for service cards */
+.servicesCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Title styling within each service card */
+.serviceTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--font-main-color);
+  gap: 10px;
+}
+
+/* Description styling within each service card */
+.serviceDescription {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--font-tertiary-color);
+}
 
 @media screen and (max-width: 830px) {
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--main-bg-color);
-    margin: 0 2rem;
-    padding: 5rem;
-    margin-bottom: 15rem;
-  }
+ 
+.container {
+  padding: 50px 20px;
+  background-color: var(--main-bg-color);
+  text-align: center;
 
+}
 
-  .servicesTitle {
-    color: var(--font-main-color);
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
+/* Title styling for the services section */
+.servicesTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: var(--font-main-color);
+}
 
-  .services {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    margin-bottom: 1rem;
+/* Container for all service cards */
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
 
-    justify-content: space-between;
-  }
+}
 
-  .serviceTitle {
-    color: var(--font-main-color);
-    font-size: 1.25rem;
-  }
+/* Each service card styling */
+.servicesCard {
+  background-color: var(--card-bg);
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  width: calc(70% - 80px); 
+ /* Adjust width for 3 cards in a row */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-  .serviceDescription {
-    color: var(--font-tertiary-color);
-    font-weight: 400;
-    font-size: 1.25rem;
-  }
+/* Hover effect for service cards */
+.servicesCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
 
+/* Title styling within each service card */
+.serviceTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--font-main-color);
+  gap: 10px;
+}
 
-  .servicesCard {
-    gap: 1rem;
-
-
-    display: flex;
-    flex-direction: column;
-
-
-
-    gap: 2rem;
-  }
-
+/* Description styling within each service card */
+.serviceDescription {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--font-tertiary-color);
+}
 
 
 }
+
+
+
+
+
+
+@media screen and (max-width: 412px) {
+
+ 
+  .container {
+    padding: 50px 20px;
+    background-color: var(--main-bg-color);
+    text-align: center;
+  
+  }
+  
+  /* Title styling for the services section */
+  .servicesTitle {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: var(--font-main-color);
+  }
+  
+  /* Container for all service cards */
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  
+  }
+  
+  /* Each service card styling */
+  .servicesCard {
+    background-color: var(--card-bg);
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(100% - 50px); 
+   /* Adjust width for 3 cards in a row */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for service cards */
+  .servicesCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title styling within each service card */
+  .serviceTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--font-main-color);
+    gap: 10px;
+  }
+  
+  /* Description styling within each service card */
+  .serviceDescription {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--font-tertiary-color);
+  }
+  
+  
+  }

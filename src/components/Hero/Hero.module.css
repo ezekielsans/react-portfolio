@@ -3,8 +3,7 @@
 
 .container {
 
-    height: 100vh;
-
+margin-bottom: 8rem;
 
 }
 
@@ -111,8 +110,11 @@
 
     .container {
 
-        height: 100vh;
+        /* height: 100vh; */
 
+
+        margin-bottom: 5rem;
+        margin-bottom: 5rem;
 
     }
 
@@ -149,3 +151,46 @@
 
 
 }
+
+
+
+
+
+/* Additional responsive adjustments specifically for 412px or smaller screens */
+@media screen and (max-width: 412px) {
+    .container {
+
+        /* height: 100vh; */
+        margin-bottom: 2rem;
+    
+    }
+
+    .heroContainer {
+        padding: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .row {
+        color: var(--font-main-color);
+        text-align: center;
+    }
+
+
+    .greeting {
+
+        font-size: 1.25rem;
+    }
+
+    .type {
+        margin-top: 1rem;
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: var(--font-tertiary-color);
+
+
+    }
+
+  }

@@ -1,39 +1,36 @@
 @import "../../global.css";
 
-
-
-
+/* Container for the entire section */
 .container {
-
-  color: var(--color-text);
+  padding: 50px 20px;
   background-color: var(--main-bg-color);
-  height: 100vh;
-  padding: 5rem;
-  margin: 0 2rem;
-  margin-bottom: 10rem;
+  text-align: center;
 }
 
-
-
+/* Title styling */
 .title {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
   color: var(--font-main-color);
-  margin-bottom: 1rem;
-
 }
 
-.projects {
-
-
+/* Container for all projects */
+.projectsContainer {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 3rem;
-  width: 100%;
+  justify-content: center;
+  gap: 20px; /* Adds space between each ProjectCard */
+  max-width: 1200px;
+  margin: 0 auto; /* Centers the container */
+}
 
+/* Projects container styling */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 
@@ -46,10 +43,10 @@
 
     color: var(--color-text);
     background-color: var(--main-bg-color);
-    height: 100vh;
+ 
     padding: 2rem;
     margin: 0 2rem;
-    margin-bottom: 85rem;
+    margin-bottom: 4rem;
   }
   
   
@@ -70,6 +67,54 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    gap: 3rem;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+}
+
+
+
+
+
+
+@media screen and (max-width: 412px) {
+
+
+
+
+  .container {
+    color: var(--color-text);
+    background-color: var(--main-bg-color);
+ 
+    padding: 2rem;
+    margin: 0 2rem;
+    margin-bottom: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    
+  }
+  
+  
+  
+  .title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--font-main-color);
+    margin-bottom: 1rem;
+  
+  }
+  
+  .projects {
+  background-color: blueviolet;
+  
+
     gap: 3rem;
     width: 100%;
     margin-bottom: 1rem;
