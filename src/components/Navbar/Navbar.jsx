@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react'
-
+import { RxHamburgerMenu } from "react-icons/rx";
 import { MdLightMode,MdNightlight } from "react-icons/md";
+import { IoClose } from "react-icons/io5";
 
 
 import styles from "./Navbar.module.css"
@@ -14,19 +15,17 @@ const [menuOpen,setMenuOpen] = useState(false);
 const [toggleOn,setToggle] = useState(false);
 
 
-useEffect(() => {
-  document.body.className = toggleOn ? 'light-mode' : 'dark-mode';
-},[toggleOn]);
+
   return (
     <nav className={styles.container}>
         <div className={styles.navbar}>
         <a href="" className={styles.title}><img src={getImageUrl("sun.png")} height="70px" alt="" /></a>
        
             <div className={styles.menu}>
-                <img className={styles.menuBtn} 
-                    src={menuOpen ? getImageUrl("nav/closeIcon.png") : getImageUrl("nav/menuIcon.png")} 
-                    alt="menu-button" 
-                    onClick={()=> setMenuOpen(!menuOpen)}/>
+                <div className={styles.menuBtn} onClick={()=> setMenuOpen(!menuOpen)}>
+                  
+                {menuOpen ? <IoClose/>  : <RxHamburgerMenu/> }
+                  </div>
           
             <ul
           className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}

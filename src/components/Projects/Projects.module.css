@@ -45,14 +45,14 @@
     background-color: var(--main-bg-color);
  
     padding: 2rem;
-    margin: 0 2rem;
+  
     margin-bottom: 4rem;
   }
   
   
   
   .title {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
     color: var(--font-main-color);
     margin-bottom: 1rem;
@@ -79,7 +79,7 @@
 
 
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 420px) {
 
 
 
@@ -87,16 +87,8 @@
   .container {
     color: var(--color-text);
     background-color: var(--main-bg-color);
- 
     padding: 2rem;
-    margin: 0 2rem;
     margin-bottom: 4rem;
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
 
     
   }
@@ -112,12 +104,10 @@
   }
   
   .projects {
-  background-color: blueviolet;
+
   
 
-    gap: 3rem;
-    width: 100%;
-    margin-bottom: 1rem;
+
   }
   
 

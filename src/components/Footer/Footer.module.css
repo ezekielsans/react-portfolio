@@ -44,7 +44,7 @@ height: 100%;
 
 
 /* Additional responsive adjustments specifically for 412px or smaller screens */
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 420px) {
    
 .container{
     background-color: var(--card-bg);
